@@ -2,14 +2,15 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedTextKitExample extends StatelessWidget {
-  const AnimatedTextKitExample({super.key});
+  final String title;
+  const AnimatedTextKitExample({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text("Animated Text Kit Example"),
+          child: Text("Animated Text Kit Example $title"),
         ),
       ),
       body: SafeArea(
@@ -46,6 +47,54 @@ class AnimatedTextKitExample extends StatelessWidget {
               SizedBox(
                 width: 30,
                 height: 50,
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
+              ),
+              AnimatedTextKit(
+                displayFullTextOnTap: true,
+                totalRepeatCount: 100,
+                animatedTexts: [
+                  TypewriterAnimatedText("Hello World",
+                      textStyle: TextStyle(fontSize: 50)),
+                ],
               ),
               AnimatedTextKit(
                 displayFullTextOnTap: true,

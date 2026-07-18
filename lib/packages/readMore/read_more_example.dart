@@ -28,7 +28,10 @@ class TReadMoreExample extends StatelessWidget {
                     decoration: BoxDecoration(color: Colors.yellow),
                     child: ReadMoreText(
                       "Yeh product bohat acha hai aur iski quality bhi zabardast hai. Yeh text sirf example ke liye lamba likha gaya hai taake read more ka feature samajh aaye.",
+                      style: TextStyle(
+                          color: Colors.blue, fontWeight: FontWeight.bold),
                       trimLines: 1,
+                      trimLength: 100,
                       trimMode: TrimMode.Line,
                       trimCollapsedText: 'Read more',
                       moreStyle:
